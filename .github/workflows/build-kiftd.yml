@@ -22,8 +22,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn install
-      run: pwd
+      run: mvn install && ls
     - name: Upload to Actions
       uses: actions/upload-artifact@v2
       with:
